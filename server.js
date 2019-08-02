@@ -1,7 +1,28 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const shell = require('shelljs')
-
+client.on('ready', () => {
+  console.log(`
+  	* ***        *                                       
+    *  ****  *   **                                  *     
+   *  *  ****    **                                 **     
+  *  **   **     **                                 **     
+ *  ***          **           ****       ****     ******** 
+**   **          **  ***     * ***  *   * **** * ********  
+**   **   ***    ** * ***   *   ****   **  ****     **     
+**   **  ****  * ***   *** **    **   ****          **     
+**   ** *  ****  **     ** **    **     ***         **     
+**   ***    **   **     ** **    **       ***       **     
+ **  **     *    **     ** **    **         ***     **     
+  ** *      *    **     ** **    **    ****  **     **     
+   ***     *     **     **  ******    * **** *      **     
+    *******      **     **   ****        ****        **    
+      ***         **    **                                 
+                        *                                  
+                       *                                   
+                      *
+  	`);
+});
 client.on('message', message => {
   if (message.author.bot) return;
   if (message.content.indexOf(';') !== 0) return;
